@@ -1,6 +1,5 @@
 package ejemplos_InOut;
 import java.util.Random;
-import static metodosOrdenamiento.Ordenamiento.intercambiar;
 
 public class Ej28 {
 
