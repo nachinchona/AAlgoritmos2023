@@ -1,4 +1,4 @@
-package ejemplos_InOut;
+package TP0.ejerciciosYEjemplos;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileNotFoundException;

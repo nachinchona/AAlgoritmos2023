@@ -1,4 +1,4 @@
-package ejemplos_InOut;
+package TP0.ejerciciosYEjemplos;
 import java.util.Scanner;
 import java.util.Random;
 

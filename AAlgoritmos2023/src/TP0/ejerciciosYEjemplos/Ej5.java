@@ -1,12 +1,14 @@
-package ejemplos_InOut;
+package TP0.ejerciciosYEjemplos;
 
 import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.HashSet;
 import java.util.Random;
+import java.util.Set;
 
-public class Ej3 {
+public class Ej5 {
 
     public static void main(String[] args) {
 
@@ -17,16 +19,17 @@ public class Ej3 {
             BufferedWriter bufferEscritura = new BufferedWriter(escritorArchivo);
 
             Random random = new Random();
+            Set<Integer> numeros = new HashSet();
 
-            String numeros = "";
-            
             for (int i = 0; i < 100; i++) {
-                double numRandom = random.nextDouble(-100, 100);
-                numeros = numeros + numRandom + "\n";
+                int numRandom = random.nextInt(0, 1000);
+                while (numeros.contains(numRandom)) {
+                    numRandom = random.nextInt(0, 1000);
+                }
+                bufferEscritura.write(String.valueOf(numRandom) + "\n");
+                numeros.add(numRandom);
             }
-            
-            bufferEscritura.write(numeros);
-            
+
             bufferEscritura.close();
         } catch (FileNotFoundException ex) {
             System.err.println(ex.getMessage() + "\nSignifica que el archivo del "

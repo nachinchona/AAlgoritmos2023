@@ -1,4 +1,4 @@
-package ejemplos_InOut;
+package TP0.ejerciciosYEjemplos;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -7,7 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Ej2 {
+public class Ej1 {
 
     public static void main(String[] args) {
 
@@ -21,23 +21,11 @@ public class Ej2 {
             FileWriter escritorArchivo = new FileWriter(nombreArchivoSalida);
             BufferedReader bufferLectura = new BufferedReader(lectorArchivo);
             BufferedWriter bufferEscritura = new BufferedWriter(escritorArchivo);
-
-            do {
-                linea = bufferLectura.readLine();
-                bufferEscritura.write(linea + "\n");
-                bufferLectura.readLine();
-            } while (linea != null);
-
-            /*
-            int i = 1;
-            while ((linea = bufferLectura.readLine()) != null) {
-                if (i % 2 != 0) {
-                    bufferEscritura.write(linea + "\n");
-                }
-                i++;
-            }
-             */
             
+            while ((linea = bufferLectura.readLine()) != null) {
+                linea = linea.replace(" ", "");
+                bufferEscritura.write(linea+"\n");
+            }
             bufferLectura.close();
             bufferEscritura.close();
         } catch (FileNotFoundException ex) {

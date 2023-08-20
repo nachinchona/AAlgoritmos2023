@@ -1,4 +1,4 @@
-package ejemplos_InOut;
+package TP0.ejerciciosYEjemplos;
 import java.util.Random;
 
 public class Ej28 {

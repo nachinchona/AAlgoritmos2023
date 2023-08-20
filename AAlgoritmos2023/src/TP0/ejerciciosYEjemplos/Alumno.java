@@ -1,4 +1,4 @@
-package ejemplos_InOut;
+package TP0.ejerciciosYEjemplos;
 import java.text.DecimalFormat;
 public class Alumno {
     
