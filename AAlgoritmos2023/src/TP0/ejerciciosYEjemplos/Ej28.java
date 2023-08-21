@@ -188,9 +188,9 @@ public class Ej28 {
         
         double[] mediasAsignatura = {mediaAsignatura(alumnos, 1), mediaAsignatura(alumnos, 2), mediaAsignatura(alumnos, 3),
         mediaAsignatura(alumnos, 4), mediaAsignatura(alumnos, 5)};
-        System.out.println("Medias de todas las asignaturas de todos los alumnos\n");
+        System.out.println("Medias de todas las asignaturas de todos los alumnos");
         imprimirArreglo(mediasAsignatura);
-        System.out.println("Medias ordenadas");
+        System.out.println("\nMedias ordenadas");
         burbuja(mediasAsignatura);
         //quickSort(mediasAsignatura);
         imprimirArreglo(mediasAsignatura);
