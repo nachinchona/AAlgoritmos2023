@@ -12,14 +12,14 @@ public class Ej5 {
 
     public static void main(String[] args) {
 
-        String nombreArchivoSalida = "C:\\Users\\nacho\\OneDrive\\Documentos\\NetBeansProjects\\RepasoAA\\src\\ejemplos_InOut\\salida.txt";
+        String nombreArchivoSalida = "C:\\Users\\nacho\\OneDrive\\Documentos\\NetBeansProjects\\AAlgoritmos2023\\AAlgoritmos2023\\src\\TP0\\ejerciciosYEjemplos\\salida.txt";
 
         try {
             FileWriter escritorArchivo = new FileWriter(nombreArchivoSalida);
             BufferedWriter bufferEscritura = new BufferedWriter(escritorArchivo);
 
             Random random = new Random();
-            Set<Integer> numeros = new HashSet();
+            Set<Integer> numeros = new HashSet<>();
 
             for (int i = 0; i < 100; i++) {
                 int numRandom = random.nextInt(0, 1000);

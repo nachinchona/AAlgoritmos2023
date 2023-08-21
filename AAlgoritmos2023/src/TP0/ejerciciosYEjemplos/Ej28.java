@@ -183,14 +183,16 @@ public class Ej28 {
         System.out.println(a4.toString());
         System.out.println(a5.toString());
 
-        System.out.println("Media A1: " + mediaAlumno(a1));
-        System.out.println("Media Quimica: " + mediaAsignatura(alumnos, 1));
+        System.out.println("Media Alumno 1: " + mediaAlumno(a1));
+        System.out.println("\nMedia Quimica: " + mediaAsignatura(alumnos, 1)+"\n");
         
         double[] mediasAsignatura = {mediaAsignatura(alumnos, 1), mediaAsignatura(alumnos, 2), mediaAsignatura(alumnos, 3),
         mediaAsignatura(alumnos, 4), mediaAsignatura(alumnos, 5)};
+        System.out.println("Medias de todas las asignaturas de todos los alumnos\n");
         imprimirArreglo(mediasAsignatura);
-        System.out.println("ordenado");
+        System.out.println("Medias ordenadas");
         burbuja(mediasAsignatura);
+        //quickSort(mediasAsignatura);
         imprimirArreglo(mediasAsignatura);
         
         

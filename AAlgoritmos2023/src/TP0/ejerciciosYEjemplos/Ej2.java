@@ -11,8 +11,8 @@ public class Ej2 {
 
     public static void main(String[] args) {
 
-        String nombreArchivoEntrada = "C:\\Users\\nacho\\OneDrive\\Documentos\\NetBeansProjects\\RepasoAA\\src\\ejemplos_InOut\\entrada.txt";
-        String nombreArchivoSalida = "C:\\Users\\nacho\\OneDrive\\Documentos\\NetBeansProjects\\RepasoAA\\src\\ejemplos_InOut\\salida.txt";
+        String nombreArchivoEntrada = "C:\\Users\\nacho\\OneDrive\\Documentos\\NetBeansProjects\\AAlgoritmos2023\\AAlgoritmos2023\\src\\TP0\\ejerciciosYEjemplos\\entrada.txt";
+        String nombreArchivoSalida = "C:\\Users\\nacho\\OneDrive\\Documentos\\NetBeansProjects\\AAlgoritmos2023\\AAlgoritmos2023\\src\\TP0\\ejerciciosYEjemplos\\salida.txt";
 
         String linea = null;
 
@@ -24,11 +24,14 @@ public class Ej2 {
 
             do {
                 linea = bufferLectura.readLine();
-                bufferEscritura.write(linea + "\n");
-                bufferLectura.readLine();
+                if (linea != null) {
+                    bufferEscritura.write(linea + "\n");
+                    bufferLectura.readLine();
+                }
             } while (linea != null);
 
             /*
+            SOLUCION 2 UTILIZANDO CONTADOR
             int i = 1;
             while ((linea = bufferLectura.readLine()) != null) {
                 if (i % 2 != 0) {

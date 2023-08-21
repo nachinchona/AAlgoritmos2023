@@ -10,15 +10,19 @@ public class Ej4 {
 
     public static void main(String[] args) {
 
-        String nombreArchivoSalida = "C:\\Users\\nacho\\OneDrive\\Documentos\\NetBeansProjects\\RepasoAA\\src\\ejemplos_InOut\\salida.txt";
+        String nombreArchivoSalida = "C:\\Users\\nacho\\OneDrive\\Documentos\\NetBeansProjects\\AAlgoritmos2023\\AAlgoritmos2023\\src\\TP0\\ejerciciosYEjemplos\\salida.txt";
         
         try {
             FileWriter escritorArchivo = new FileWriter(nombreArchivoSalida);
             BufferedWriter bufferEscritura = new BufferedWriter(escritorArchivo);
             
+            String cadenas = "";
+            
             for (int i = 0; i < 100; i++) {
-                bufferEscritura.write(generarCadena()+"\n");
+                cadenas = cadenas + generarCadena()+"\n";
             }
+            
+            bufferEscritura.write(cadenas);
             
             bufferEscritura.close();
         } catch (FileNotFoundException ex) {

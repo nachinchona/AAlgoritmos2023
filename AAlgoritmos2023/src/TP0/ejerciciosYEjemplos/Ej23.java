@@ -11,6 +11,7 @@ public class Ej23 {
         n = sc.nextInt();
         int raizN = (int) Math.sqrt(n);
 
+        //utilizando propiedades de algebra
         if (n == 1) {
             System.out.println("no es primo");
         } else {
@@ -28,6 +29,7 @@ public class Ej23 {
         }
 
         /*
+        solucion vieja
         for (int j = 1; j <= n; j++) {
             int i = 2;
             cantDivisores = 1;

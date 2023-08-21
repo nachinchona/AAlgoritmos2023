@@ -28,6 +28,7 @@ public class Ej1 {
             }
             bufferLectura.close();
             bufferEscritura.close();
+            
         } catch (FileNotFoundException ex) {
             System.err.println(ex.getMessage() + "\nSignifica que el archivo del "
                     + "que queriamos leer no existe.");
